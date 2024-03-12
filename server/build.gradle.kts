@@ -32,6 +32,12 @@ dependencies {
     testImplementation("mysql:mysql-connector-java:8.0.32")
 }
 
+dependencyManagement {
+    imports {
+        mavenBom("org.testcontainers:testcontainers-bom:1.16.3")
+    }
+}
+
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs += "-Xjsr305=strict"
