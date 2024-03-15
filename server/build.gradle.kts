@@ -33,9 +33,9 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-security")
-    implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
-    implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
+    //implementation("org.springframework.boot:spring-boot-starter-security")
+    //implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
+    //implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     runtimeOnly("org.postgresql:postgresql")
@@ -44,9 +44,9 @@ dependencies {
     testImplementation("org.testcontainers:postgresql:1.17.6")
     testImplementation("org.testcontainers:testcontainers:1.15.3")
     testImplementation("mysql:mysql-connector-java:8.0.32")
-    implementation("org.keycloak:keycloak-admin-client:15.0.2")
-    implementation("org.keycloak:keycloak-core:15.0.2")
-    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+    //implementation("org.keycloak:keycloak-admin-client:15.0.2")
+    //implementation("org.keycloak:keycloak-core:15.0.2")
+    //implementation("com.squareup.okhttp3:okhttp:4.9.1")
 
 }
 
