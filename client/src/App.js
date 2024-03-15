@@ -7,6 +7,7 @@ import {Container, Row} from 'react-bootstrap';
 import CustomerHomePage from "./customer/CustomerHomePage";
 
 
+
 function App() {
     return (
         <Router>
@@ -23,7 +24,7 @@ function App2() {
                 <Row className='vheight-100'>
                     <Routes>
                         <Route path='/' element={<CustomerHomePage />} />
-                        <Route path='new-purchase' element={<NewPurchaseForm  />} />
+
                     </Routes>
                 </Row>
             </Container>
