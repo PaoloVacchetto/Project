@@ -7,6 +7,7 @@ plugins {
     kotlin("plugin.spring") version "1.9.22"
     kotlin("plugin.jpa") version "1.9.22"
     id("com.google.cloud.tools.jib") version "3.3.1"
+    id("io.freefair.lombok") version "6.2.0"
 }
 
 jib {
@@ -43,6 +44,10 @@ dependencies {
     testImplementation("org.testcontainers:postgresql:1.17.6")
     testImplementation("org.testcontainers:testcontainers:1.15.3")
     testImplementation("mysql:mysql-connector-java:8.0.32")
+    implementation("org.keycloak:keycloak-admin-client:15.0.2")
+    implementation("org.keycloak:keycloak-core:15.0.2")
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+
 }
 
 dependencyManagement {
